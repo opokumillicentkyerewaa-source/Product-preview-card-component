@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain {
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 17px;
+  overflow: hidden;
+
+}
+
+.left-side {
+  padding: 0px;
+  /* background-image: linear-gradient(to top, hsl(234, 85%, 55%) 0%, hsla(256, 72%, 46%, 1) 100%); */
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* height:70vh; */
+}
+
+.image {
+  width: 100%;
+  /* height: 35rem; */
+}
+
+.right-side {
+  width: 210px;
+  padding: 20px;
+  background-color: #fff;
+  /* height:70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h5 {
+  font-weight: 300;
+  color: hsl(228, 12%, 48%);
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 5px;
+}
+
+.description {
+  font-weight: 700;
+  color: hsl(0, 0, 0);
+  font-size: 20px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.content {
+  font-size: 10px;
+  color: hsl(228, 12%, 48%);
+  font-weight: 400;
+}
+
+.money {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.amount {
+  color: hsl(158, 36%, 37%);
+  font-size: 20px;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-variation-settings:
+    "SOFT"0,
+    "WONK"0;
+}
+
+.cancel {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+}
+
+.btn {
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 700px) {
+  .contain {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 45px;
+    overflow: hidden;
+
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+  }
+
+  .right-side {
+    gap: 30px;
+  }
+
+  .main-content {
+    height: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+.button-text {
+  padding-left: 5px;
+}
